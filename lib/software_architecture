@@ -1,0 +1,18 @@
+/rav_365_photo_editor
+├── pubspec.yaml                      # Flutter dependencies (google_fonts, phosphor_flutter, bitsdojo_window, provider, file_picker)
+└── lib/
+    ├── main.dart                     # Windows entry point with BitsDojo window configuration & app layout
+    ├── models/
+    │   └── photo.dart                # Photo, EXIF, Metadata, Folder, Album models & sample data
+    ├── providers/
+    │   └── photo_provider.dart       # State management for zoom/pan, navigation, filters, adjustments, view modes
+    └── widgets/
+        ├── title_bar.dart            # Custom Windows TitleBar with minimize, maximize, and close controls
+        ├── menu_bar.dart             # Desktop dropdown menus (File, Edit, View, Image, Tools, Help)
+        ├── toolbar.dart              # Quick actions toolbar (Zoom, Rotate, Flip, Mode Switcher, Favorite)
+        ├── left_sidebar.dart         # Folder tree, Albums, Minimum rating filter, Tag cloud, Search bar
+        ├── center_workspace.dart     # Interactive canvas with checkerboard background, zoom/pan, Compare mode & Grid view
+        ├── histogram_painter.dart    # Custom RGB luminance curve painter
+        ├── right_sidebar.dart        # EXIF inspector, RGB histogram canvas, dominant color swatches, wallpaper action
+        ├── filmstrip.dart            # Horizontal thumbnail strip with badges, favorites & sorting dropdown
+        └── status_bar.dart           # Status bar with image index, dimensions, megapixels, GPU acceleration & zoom %
