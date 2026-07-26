@@ -244,7 +244,7 @@ This project is licensed under the MIT License.
 
 # Author
 
-Developed with ❤️ using Flutter.
+Developed by Samuel Giftstone using Flutter.
 
 ---
 
